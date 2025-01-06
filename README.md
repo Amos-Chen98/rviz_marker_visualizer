@@ -16,7 +16,7 @@ catkin build
 ## Usage
 
 ```
-roslaunch roslaunch rviz_marker_visualizer run_visualizer.launch
+roslaunch rviz_marker_visualizer run_visualizer.launch
 ```
 
 Configurable parameters are in the `run_visualizer.launch`:

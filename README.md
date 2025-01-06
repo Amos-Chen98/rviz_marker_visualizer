@@ -5,17 +5,29 @@ This a **ROS package** that publishes markers in RViz.
 
 ## Installation
 
-In your workspace/src:
+Option 1 - In your workspace/src:
 
-```
+```bash
 git clone https://github.com/Amos-Chen98/rviz_marker_visualizer.git
-cd ..
+cd <path_to_your_workspace>
+catkin build
+```
+
+Option 2 - If you are using `wstool` in your existing workspace:
+
+In <path_to_your_workspace>, run
+
+```bash
+wstool set -u -t src rviz_marker_visualizer https://github.com/Amos-Chen98/rviz_marker_visualizer.git --git
+wstool update -t src
 catkin build
 ```
 
 ## Usage
 
-```
+Please remember to source the `setup.bash`.
+
+```bash
 roslaunch rviz_marker_visualizer run_visualizer.launch
 ```
 
